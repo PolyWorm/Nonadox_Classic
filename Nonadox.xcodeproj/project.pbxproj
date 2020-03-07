@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D06A28841EA88F310081C2CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28831EA88F310081C2CE /* AppDelegate.swift */; };
+		D06A28861EA88F310081C2CE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28851EA88F310081C2CE /* GameScene.sks */; };
+		D06A28881EA88F310081C2CE /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28871EA88F310081C2CE /* Actions.sks */; };
+		D06A288A1EA88F310081C2CE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28891EA88F310081C2CE /* GameScene.swift */; };
+		D06A288C1EA88F320081C2CE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A288B1EA88F320081C2CE /* GameViewController.swift */; };
+		D06A288F1EA88F320081C2CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06A288D1EA88F320081C2CE /* Main.storyboard */; };
+		D06A28911EA88F320081C2CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D06A28901EA88F320081C2CE /* Assets.xcassets */; };
+		D06A28941EA88F320081C2CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D06A28921EA88F320081C2CE /* LaunchScreen.storyboard */; };
+		D06A289F1EA88F320081C2CE /* NonadoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A289E1EA88F320081C2CE /* NonadoxTests.swift */; };
+		D06A28AA1EA88F320081C2CE /* NonadoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28A91EA88F320081C2CE /* NonadoxUITests.swift */; };
+		D06A28B91EA88F4D0081C2CE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06A28B81EA88F4D0081C2CE /* AudioToolbox.framework */; };
+		D06A290E1EA88FF10081C2CE /* TutorialBrains.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28BA1EA88FF10081C2CE /* TutorialBrains.swift */; };
+		D06A290F1EA88FF10081C2CE /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28BB1EA88FF10081C2CE /* Tutorial.swift */; };
+		D06A29101EA88FF10081C2CE /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28BC1EA88FF10081C2CE /* Tutorial.sks */; };
+		D06A29111EA88FF10081C2CE /* Tutorial2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28BD1EA88FF10081C2CE /* Tutorial2.swift */; };
+		D06A29121EA88FF10081C2CE /* Tutorial2.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28BE1EA88FF10081C2CE /* Tutorial2.sks */; };
+		D06A29131EA88FF10081C2CE /* StageOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28BF1EA88FF10081C2CE /* StageOne.swift */; };
+		D06A29141EA88FF10081C2CE /* StageOne.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28C01EA88FF10081C2CE /* StageOne.sks */; };
+		D06A29151EA88FF10081C2CE /* StageTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28C11EA88FF10081C2CE /* StageTwo.swift */; };
+		D06A29161EA88FF10081C2CE /* StageTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28C21EA88FF10081C2CE /* StageTwo.sks */; };
+		D06A29171EA88FF10081C2CE /* StageThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28C31EA88FF10081C2CE /* StageThree.swift */; };
+		D06A29181EA88FF10081C2CE /* StageThree.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28C41EA88FF10081C2CE /* StageThree.sks */; };
+		D06A29191EA88FF10081C2CE /* StageFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28C51EA88FF10081C2CE /* StageFour.swift */; };
+		D06A291A1EA88FF10081C2CE /* StageFour.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28C61EA88FF10081C2CE /* StageFour.sks */; };
+		D06A291B1EA88FF10081C2CE /* StageFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28C71EA88FF10081C2CE /* StageFive.swift */; };
+		D06A291C1EA88FF10081C2CE /* StageFive.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28C81EA88FF10081C2CE /* StageFive.sks */; };
+		D06A291D1EA88FF10081C2CE /* StageSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28C91EA88FF10081C2CE /* StageSix.swift */; };
+		D06A291E1EA88FF10081C2CE /* StageSix.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28CA1EA88FF10081C2CE /* StageSix.sks */; };
+		D06A291F1EA88FF10081C2CE /* StageSeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28CB1EA88FF10081C2CE /* StageSeven.swift */; };
+		D06A29201EA88FF10081C2CE /* StageSeven.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28CC1EA88FF10081C2CE /* StageSeven.sks */; };
+		D06A29211EA88FF10081C2CE /* StageEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28CD1EA88FF10081C2CE /* StageEight.swift */; };
+		D06A29221EA88FF10081C2CE /* StageEight.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28CE1EA88FF10081C2CE /* StageEight.sks */; };
+		D06A29231EA88FF10081C2CE /* StageNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28CF1EA88FF10081C2CE /* StageNine.swift */; };
+		D06A29241EA88FF10081C2CE /* StageNine.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28D01EA88FF10081C2CE /* StageNine.sks */; };
+		D06A29251EA88FF10081C2CE /* StageTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28D11EA88FF10081C2CE /* StageTen.swift */; };
+		D06A29261EA88FF10081C2CE /* StageTen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28D21EA88FF10081C2CE /* StageTen.sks */; };
+		D06A29271EA88FF10081C2CE /* StageEleven.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28D31EA88FF10081C2CE /* StageEleven.swift */; };
+		D06A29281EA88FF10081C2CE /* StageEleven.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28D41EA88FF10081C2CE /* StageEleven.sks */; };
+		D06A29291EA88FF10081C2CE /* StageTwelve.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28D51EA88FF10081C2CE /* StageTwelve.swift */; };
+		D06A292A1EA88FF10081C2CE /* StageTwelve.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28D61EA88FF10081C2CE /* StageTwelve.sks */; };
+		D06A292B1EA88FF10081C2CE /* StageThirteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28D71EA88FF10081C2CE /* StageThirteen.swift */; };
+		D06A292C1EA88FF10081C2CE /* StageThirteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28D81EA88FF10081C2CE /* StageThirteen.sks */; };
+		D06A292D1EA88FF10081C2CE /* StageFourteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28D91EA88FF10081C2CE /* StageFourteen.swift */; };
+		D06A292E1EA88FF10081C2CE /* StageFourteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28DA1EA88FF10081C2CE /* StageFourteen.sks */; };
+		D06A292F1EA88FF10081C2CE /* StageFifteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28DB1EA88FF10081C2CE /* StageFifteen.swift */; };
+		D06A29301EA88FF10081C2CE /* StageFifteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28DC1EA88FF10081C2CE /* StageFifteen.sks */; };
+		D06A29311EA88FF10081C2CE /* StageSixteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28DD1EA88FF10081C2CE /* StageSixteen.swift */; };
+		D06A29321EA88FF10081C2CE /* StageSixteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28DE1EA88FF10081C2CE /* StageSixteen.sks */; };
+		D06A29331EA88FF10081C2CE /* StageSeventeen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28DF1EA88FF10081C2CE /* StageSeventeen.swift */; };
+		D06A29341EA88FF10081C2CE /* StageSeventeen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28E01EA88FF10081C2CE /* StageSeventeen.sks */; };
+		D06A29351EA88FF10081C2CE /* StageEighteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28E11EA88FF10081C2CE /* StageEighteen.swift */; };
+		D06A29361EA88FF10081C2CE /* StageEighteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28E21EA88FF10081C2CE /* StageEighteen.sks */; };
+		D06A29371EA88FF10081C2CE /* StageNineteen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28E31EA88FF10081C2CE /* StageNineteen.swift */; };
+		D06A29381EA88FF10081C2CE /* StageNineteen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28E41EA88FF10081C2CE /* StageNineteen.sks */; };
+		D06A29391EA88FF10081C2CE /* StageTwenty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28E51EA88FF10081C2CE /* StageTwenty.swift */; };
+		D06A293A1EA88FF10081C2CE /* StageTwenty.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28E61EA88FF10081C2CE /* StageTwenty.sks */; };
+		D06A293B1EA88FF10081C2CE /* StageTwentyOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28E71EA88FF10081C2CE /* StageTwentyOne.swift */; };
+		D06A293C1EA88FF10081C2CE /* StageTwentyOne.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28E81EA88FF10081C2CE /* StageTwentyOne.sks */; };
+		D06A293D1EA88FF10081C2CE /* StageTwentyTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28E91EA88FF10081C2CE /* StageTwentyTwo.swift */; };
+		D06A293E1EA88FF10081C2CE /* StageTwentyTwo.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28EA1EA88FF10081C2CE /* StageTwentyTwo.sks */; };
+		D06A293F1EA88FF10081C2CE /* StageTwentyThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28EB1EA88FF10081C2CE /* StageTwentyThree.swift */; };
+		D06A29401EA88FF10081C2CE /* StageTwentyThree.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28EC1EA88FF10081C2CE /* StageTwentyThree.sks */; };
+		D06A29411EA88FF10081C2CE /* StageTwentyFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28ED1EA88FF10081C2CE /* StageTwentyFour.swift */; };
+		D06A29421EA88FF10081C2CE /* StageTwentyFour.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28EE1EA88FF10081C2CE /* StageTwentyFour.sks */; };
+		D06A29431EA88FF10081C2CE /* StageTwentyFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28EF1EA88FF10081C2CE /* StageTwentyFive.swift */; };
+		D06A29441EA88FF10081C2CE /* StageTwentyFive.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28F01EA88FF10081C2CE /* StageTwentyFive.sks */; };
+		D06A29451EA88FF10081C2CE /* StageTwentySix.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28F11EA88FF10081C2CE /* StageTwentySix.swift */; };
+		D06A29461EA88FF10081C2CE /* StageTwentySix.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28F21EA88FF10081C2CE /* StageTwentySix.sks */; };
+		D06A29471EA88FF10081C2CE /* StageTwentySeven.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28F31EA88FF10081C2CE /* StageTwentySeven.swift */; };
+		D06A29481EA88FF10081C2CE /* StageTwentySeven.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28F41EA88FF10081C2CE /* StageTwentySeven.sks */; };
+		D06A29491EA88FF10081C2CE /* StageTwentyEight.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28F51EA88FF10081C2CE /* StageTwentyEight.swift */; };
+		D06A294A1EA88FF10081C2CE /* StageTwentyEight.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28F61EA88FF10081C2CE /* StageTwentyEight.sks */; };
+		D06A294B1EA88FF10081C2CE /* StageTwentyNine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28F71EA88FF10081C2CE /* StageTwentyNine.swift */; };
+		D06A294C1EA88FF10081C2CE /* StageTwentyNine.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28F81EA88FF10081C2CE /* StageTwentyNine.sks */; };
+		D06A294D1EA88FF10081C2CE /* StageThirty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28F91EA88FF10081C2CE /* StageThirty.swift */; };
+		D06A294E1EA88FF10081C2CE /* StageThirty.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28FA1EA88FF10081C2CE /* StageThirty.sks */; };
+		D06A294F1EA88FF10081C2CE /* StageThirtyOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28FB1EA88FF10081C2CE /* StageThirtyOne.swift */; };
+		D06A29501EA88FF10081C2CE /* StageThirtyOne.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A28FC1EA88FF10081C2CE /* StageThirtyOne.sks */; };
+		D06A29511EA88FF10081C2CE /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28FD1EA88FF10081C2CE /* SKTAudio.swift */; };
+		D06A29521EA88FF10081C2CE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28FE1EA88FF10081C2CE /* Data.swift */; };
+		D06A29531EA88FF10081C2CE /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A28FF1EA88FF10081C2CE /* Brain.swift */; };
+		D06A29541EA88FF10081C2CE /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A29001EA88FF10081C2CE /* SplashScreen.swift */; };
+		D06A29551EA88FF10081C2CE /* SplashScreen.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A29011EA88FF10081C2CE /* SplashScreen.sks */; };
+		D06A29561EA88FF10081C2CE /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A29021EA88FF10081C2CE /* MenuScene.swift */; };
+		D06A29571EA88FF10081C2CE /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A29031EA88FF10081C2CE /* MenuScene.sks */; };
+		D06A29581EA88FF10081C2CE /* GameSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A29041EA88FF10081C2CE /* GameSelect.swift */; };
+		D06A29591EA88FF10081C2CE /* GameSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A29051EA88FF10081C2CE /* GameSelect.sks */; };
+		D06A295A1EA88FF10081C2CE /* GameSelect2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D06A29061EA88FF10081C2CE /* GameSelect2.swift */; };
+		D06A295B1EA88FF10081C2CE /* GameSelect2.sks in Resources */ = {isa = PBXBuildFile; fileRef = D06A29071EA88FF10081C2CE /* GameSelect2.sks */; };
+		D06A295C1EA88FF10081C2CE /* MODERN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D06A29081EA88FF10081C2CE /* MODERN.ttf */; };
+		D06A295D1EA88FF10081C2CE /* g#.wav in Resources */ = {isa = PBXBuildFile; fileRef = D06A29091EA88FF10081C2CE /* g#.wav */; };
+		D06A295E1EA88FF10081C2CE /* b.wav in Resources */ = {isa = PBXBuildFile; fileRef = D06A290A1EA88FF10081C2CE /* b.wav */; };
+		D06A295F1EA88FF10081C2CE /* c.wav in Resources */ = {isa = PBXBuildFile; fileRef = D06A290B1EA88FF10081C2CE /* c.wav */; };
+		D06A29601EA88FF10081C2CE /* e.wav in Resources */ = {isa = PBXBuildFile; fileRef = D06A290C1EA88FF10081C2CE /* e.wav */; };
+		D06A29671EA897790081C2CE /* NonadoxOST.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D06A29661EA897790081C2CE /* NonadoxOST.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D06A289B1EA88F320081C2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06A28781EA88F310081C2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06A287F1EA88F310081C2CE;
+			remoteInfo = Nonadox;
+		};
+		D06A28A61EA88F320081C2CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06A28781EA88F310081C2CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D06A287F1EA88F310081C2CE;
+			remoteInfo = Nonadox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D06A28801EA88F310081C2CE /* Nonadox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nonadox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06A28831EA88F310081C2CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D06A28851EA88F310081C2CE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		D06A28871EA88F310081C2CE /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		D06A28891EA88F310081C2CE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		D06A288B1EA88F320081C2CE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		D06A288E1EA88F320081C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D06A28901EA88F320081C2CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D06A28931EA88F320081C2CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D06A28951EA88F320081C2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A289A1EA88F320081C2CE /* NonadoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonadoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06A289E1EA88F320081C2CE /* NonadoxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonadoxTests.swift; sourceTree = "<group>"; };
+		D06A28A01EA88F320081C2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A28A51EA88F320081C2CE /* NonadoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NonadoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06A28A91EA88F320081C2CE /* NonadoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonadoxUITests.swift; sourceTree = "<group>"; };
+		D06A28AB1EA88F320081C2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06A28B81EA88F4D0081C2CE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D06A28BA1EA88FF10081C2CE /* TutorialBrains.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialBrains.swift; sourceTree = "<group>"; };
+		D06A28BB1EA88FF10081C2CE /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		D06A28BC1EA88FF10081C2CE /* Tutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial.sks; sourceTree = "<group>"; };
+		D06A28BD1EA88FF10081C2CE /* Tutorial2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial2.swift; sourceTree = "<group>"; };
+		D06A28BE1EA88FF10081C2CE /* Tutorial2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial2.sks; sourceTree = "<group>"; };
+		D06A28BF1EA88FF10081C2CE /* StageOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageOne.swift; sourceTree = "<group>"; };
+		D06A28C01EA88FF10081C2CE /* StageOne.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageOne.sks; sourceTree = "<group>"; };
+		D06A28C11EA88FF10081C2CE /* StageTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwo.swift; sourceTree = "<group>"; };
+		D06A28C21EA88FF10081C2CE /* StageTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwo.sks; sourceTree = "<group>"; };
+		D06A28C31EA88FF10081C2CE /* StageThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageThree.swift; sourceTree = "<group>"; };
+		D06A28C41EA88FF10081C2CE /* StageThree.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageThree.sks; sourceTree = "<group>"; };
+		D06A28C51EA88FF10081C2CE /* StageFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFour.swift; sourceTree = "<group>"; };
+		D06A28C61EA88FF10081C2CE /* StageFour.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageFour.sks; sourceTree = "<group>"; };
+		D06A28C71EA88FF10081C2CE /* StageFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFive.swift; sourceTree = "<group>"; };
+		D06A28C81EA88FF10081C2CE /* StageFive.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageFive.sks; sourceTree = "<group>"; };
+		D06A28C91EA88FF10081C2CE /* StageSix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSix.swift; sourceTree = "<group>"; };
+		D06A28CA1EA88FF10081C2CE /* StageSix.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageSix.sks; sourceTree = "<group>"; };
+		D06A28CB1EA88FF10081C2CE /* StageSeven.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSeven.swift; sourceTree = "<group>"; };
+		D06A28CC1EA88FF10081C2CE /* StageSeven.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageSeven.sks; sourceTree = "<group>"; };
+		D06A28CD1EA88FF10081C2CE /* StageEight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageEight.swift; sourceTree = "<group>"; };
+		D06A28CE1EA88FF10081C2CE /* StageEight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageEight.sks; sourceTree = "<group>"; };
+		D06A28CF1EA88FF10081C2CE /* StageNine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageNine.swift; sourceTree = "<group>"; };
+		D06A28D01EA88FF10081C2CE /* StageNine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageNine.sks; sourceTree = "<group>"; };
+		D06A28D11EA88FF10081C2CE /* StageTen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTen.swift; sourceTree = "<group>"; };
+		D06A28D21EA88FF10081C2CE /* StageTen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTen.sks; sourceTree = "<group>"; };
+		D06A28D31EA88FF10081C2CE /* StageEleven.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageEleven.swift; sourceTree = "<group>"; };
+		D06A28D41EA88FF10081C2CE /* StageEleven.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageEleven.sks; sourceTree = "<group>"; };
+		D06A28D51EA88FF10081C2CE /* StageTwelve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwelve.swift; sourceTree = "<group>"; };
+		D06A28D61EA88FF10081C2CE /* StageTwelve.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwelve.sks; sourceTree = "<group>"; };
+		D06A28D71EA88FF10081C2CE /* StageThirteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageThirteen.swift; sourceTree = "<group>"; };
+		D06A28D81EA88FF10081C2CE /* StageThirteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageThirteen.sks; sourceTree = "<group>"; };
+		D06A28D91EA88FF10081C2CE /* StageFourteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFourteen.swift; sourceTree = "<group>"; };
+		D06A28DA1EA88FF10081C2CE /* StageFourteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageFourteen.sks; sourceTree = "<group>"; };
+		D06A28DB1EA88FF10081C2CE /* StageFifteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageFifteen.swift; sourceTree = "<group>"; };
+		D06A28DC1EA88FF10081C2CE /* StageFifteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageFifteen.sks; sourceTree = "<group>"; };
+		D06A28DD1EA88FF10081C2CE /* StageSixteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSixteen.swift; sourceTree = "<group>"; };
+		D06A28DE1EA88FF10081C2CE /* StageSixteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageSixteen.sks; sourceTree = "<group>"; };
+		D06A28DF1EA88FF10081C2CE /* StageSeventeen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageSeventeen.swift; sourceTree = "<group>"; };
+		D06A28E01EA88FF10081C2CE /* StageSeventeen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageSeventeen.sks; sourceTree = "<group>"; };
+		D06A28E11EA88FF10081C2CE /* StageEighteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageEighteen.swift; sourceTree = "<group>"; };
+		D06A28E21EA88FF10081C2CE /* StageEighteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageEighteen.sks; sourceTree = "<group>"; };
+		D06A28E31EA88FF10081C2CE /* StageNineteen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageNineteen.swift; sourceTree = "<group>"; };
+		D06A28E41EA88FF10081C2CE /* StageNineteen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageNineteen.sks; sourceTree = "<group>"; };
+		D06A28E51EA88FF10081C2CE /* StageTwenty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwenty.swift; sourceTree = "<group>"; };
+		D06A28E61EA88FF10081C2CE /* StageTwenty.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwenty.sks; sourceTree = "<group>"; };
+		D06A28E71EA88FF10081C2CE /* StageTwentyOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyOne.swift; sourceTree = "<group>"; };
+		D06A28E81EA88FF10081C2CE /* StageTwentyOne.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyOne.sks; sourceTree = "<group>"; };
+		D06A28E91EA88FF10081C2CE /* StageTwentyTwo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyTwo.swift; sourceTree = "<group>"; };
+		D06A28EA1EA88FF10081C2CE /* StageTwentyTwo.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyTwo.sks; sourceTree = "<group>"; };
+		D06A28EB1EA88FF10081C2CE /* StageTwentyThree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyThree.swift; sourceTree = "<group>"; };
+		D06A28EC1EA88FF10081C2CE /* StageTwentyThree.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyThree.sks; sourceTree = "<group>"; };
+		D06A28ED1EA88FF10081C2CE /* StageTwentyFour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyFour.swift; sourceTree = "<group>"; };
+		D06A28EE1EA88FF10081C2CE /* StageTwentyFour.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyFour.sks; sourceTree = "<group>"; };
+		D06A28EF1EA88FF10081C2CE /* StageTwentyFive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyFive.swift; sourceTree = "<group>"; };
+		D06A28F01EA88FF10081C2CE /* StageTwentyFive.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyFive.sks; sourceTree = "<group>"; };
+		D06A28F11EA88FF10081C2CE /* StageTwentySix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentySix.swift; sourceTree = "<group>"; };
+		D06A28F21EA88FF10081C2CE /* StageTwentySix.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentySix.sks; sourceTree = "<group>"; };
+		D06A28F31EA88FF10081C2CE /* StageTwentySeven.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentySeven.swift; sourceTree = "<group>"; };
+		D06A28F41EA88FF10081C2CE /* StageTwentySeven.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentySeven.sks; sourceTree = "<group>"; };
+		D06A28F51EA88FF10081C2CE /* StageTwentyEight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyEight.swift; sourceTree = "<group>"; };
+		D06A28F61EA88FF10081C2CE /* StageTwentyEight.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyEight.sks; sourceTree = "<group>"; };
+		D06A28F71EA88FF10081C2CE /* StageTwentyNine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageTwentyNine.swift; sourceTree = "<group>"; };
+		D06A28F81EA88FF10081C2CE /* StageTwentyNine.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageTwentyNine.sks; sourceTree = "<group>"; };
+		D06A28F91EA88FF10081C2CE /* StageThirty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageThirty.swift; sourceTree = "<group>"; };
+		D06A28FA1EA88FF10081C2CE /* StageThirty.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageThirty.sks; sourceTree = "<group>"; };
+		D06A28FB1EA88FF10081C2CE /* StageThirtyOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StageThirtyOne.swift; sourceTree = "<group>"; };
+		D06A28FC1EA88FF10081C2CE /* StageThirtyOne.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StageThirtyOne.sks; sourceTree = "<group>"; };
+		D06A28FD1EA88FF10081C2CE /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		D06A28FE1EA88FF10081C2CE /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		D06A28FF1EA88FF10081C2CE /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		D06A29001EA88FF10081C2CE /* SplashScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		D06A29011EA88FF10081C2CE /* SplashScreen.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = SplashScreen.sks; sourceTree = "<group>"; };
+		D06A29021EA88FF10081C2CE /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		D06A29031EA88FF10081C2CE /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
+		D06A29041EA88FF10081C2CE /* GameSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelect.swift; sourceTree = "<group>"; };
+		D06A29051EA88FF10081C2CE /* GameSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSelect.sks; sourceTree = "<group>"; };
+		D06A29061EA88FF10081C2CE /* GameSelect2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelect2.swift; sourceTree = "<group>"; };
+		D06A29071EA88FF10081C2CE /* GameSelect2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameSelect2.sks; sourceTree = "<group>"; };
+		D06A29081EA88FF10081C2CE /* MODERN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MODERN.ttf; sourceTree = "<group>"; };
+		D06A29091EA88FF10081C2CE /* g#.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "g#.wav"; sourceTree = "<group>"; };
+		D06A290A1EA88FF10081C2CE /* b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = b.wav; sourceTree = "<group>"; };
+		D06A290B1EA88FF10081C2CE /* c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = c.wav; sourceTree = "<group>"; };
+		D06A290C1EA88FF10081C2CE /* e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = e.wav; sourceTree = "<group>"; };
+		D06A29661EA897790081C2CE /* NonadoxOST.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NonadoxOST.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D06A287D1EA88F310081C2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A28B91EA88F4D0081C2CE /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28971EA88F320081C2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28A21EA88F320081C2CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D06A28771EA88F310081C2CE = {
+			isa = PBXGroup;
+			children = (
+				D06A28821EA88F310081C2CE /* Nonadox */,
+				D06A289D1EA88F320081C2CE /* NonadoxTests */,
+				D06A28A81EA88F320081C2CE /* NonadoxUITests */,
+				D06A28811EA88F310081C2CE /* Products */,
+				D06A28B71EA88F4C0081C2CE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D06A28811EA88F310081C2CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D06A28801EA88F310081C2CE /* Nonadox.app */,
+				D06A289A1EA88F320081C2CE /* NonadoxTests.xctest */,
+				D06A28A51EA88F320081C2CE /* NonadoxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D06A28821EA88F310081C2CE /* Nonadox */ = {
+			isa = PBXGroup;
+			children = (
+				D06A29621EA88FFB0081C2CE /* Levels */,
+				D06A29631EA890060081C2CE /* Mechanics */,
+				D06A29641EA8900E0081C2CE /* Menu */,
+				D06A29651EA8901A0081C2CE /* Assets */,
+				D06A28831EA88F310081C2CE /* AppDelegate.swift */,
+				D06A28851EA88F310081C2CE /* GameScene.sks */,
+				D06A28871EA88F310081C2CE /* Actions.sks */,
+				D06A28891EA88F310081C2CE /* GameScene.swift */,
+				D06A288B1EA88F320081C2CE /* GameViewController.swift */,
+				D06A288D1EA88F320081C2CE /* Main.storyboard */,
+				D06A28901EA88F320081C2CE /* Assets.xcassets */,
+				D06A28921EA88F320081C2CE /* LaunchScreen.storyboard */,
+				D06A28951EA88F320081C2CE /* Info.plist */,
+			);
+			path = Nonadox;
+			sourceTree = "<group>";
+		};
+		D06A289D1EA88F320081C2CE /* NonadoxTests */ = {
+			isa = PBXGroup;
+			children = (
+				D06A289E1EA88F320081C2CE /* NonadoxTests.swift */,
+				D06A28A01EA88F320081C2CE /* Info.plist */,
+			);
+			path = NonadoxTests;
+			sourceTree = "<group>";
+		};
+		D06A28A81EA88F320081C2CE /* NonadoxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D06A28A91EA88F320081C2CE /* NonadoxUITests.swift */,
+				D06A28AB1EA88F320081C2CE /* Info.plist */,
+			);
+			path = NonadoxUITests;
+			sourceTree = "<group>";
+		};
+		D06A28B71EA88F4C0081C2CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D06A28B81EA88F4D0081C2CE /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D06A29621EA88FFB0081C2CE /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				D06A28BA1EA88FF10081C2CE /* TutorialBrains.swift */,
+				D06A28BB1EA88FF10081C2CE /* Tutorial.swift */,
+				D06A28BC1EA88FF10081C2CE /* Tutorial.sks */,
+				D06A28BD1EA88FF10081C2CE /* Tutorial2.swift */,
+				D06A28BE1EA88FF10081C2CE /* Tutorial2.sks */,
+				D06A28BF1EA88FF10081C2CE /* StageOne.swift */,
+				D06A28C01EA88FF10081C2CE /* StageOne.sks */,
+				D06A28C11EA88FF10081C2CE /* StageTwo.swift */,
+				D06A28C21EA88FF10081C2CE /* StageTwo.sks */,
+				D06A28C31EA88FF10081C2CE /* StageThree.swift */,
+				D06A28C41EA88FF10081C2CE /* StageThree.sks */,
+				D06A28C51EA88FF10081C2CE /* StageFour.swift */,
+				D06A28C61EA88FF10081C2CE /* StageFour.sks */,
+				D06A28C71EA88FF10081C2CE /* StageFive.swift */,
+				D06A28C81EA88FF10081C2CE /* StageFive.sks */,
+				D06A28C91EA88FF10081C2CE /* StageSix.swift */,
+				D06A28CA1EA88FF10081C2CE /* StageSix.sks */,
+				D06A28CB1EA88FF10081C2CE /* StageSeven.swift */,
+				D06A28CC1EA88FF10081C2CE /* StageSeven.sks */,
+				D06A28CD1EA88FF10081C2CE /* StageEight.swift */,
+				D06A28CE1EA88FF10081C2CE /* StageEight.sks */,
+				D06A28CF1EA88FF10081C2CE /* StageNine.swift */,
+				D06A28D01EA88FF10081C2CE /* StageNine.sks */,
+				D06A28D11EA88FF10081C2CE /* StageTen.swift */,
+				D06A28D21EA88FF10081C2CE /* StageTen.sks */,
+				D06A28D31EA88FF10081C2CE /* StageEleven.swift */,
+				D06A28D41EA88FF10081C2CE /* StageEleven.sks */,
+				D06A28D51EA88FF10081C2CE /* StageTwelve.swift */,
+				D06A28D61EA88FF10081C2CE /* StageTwelve.sks */,
+				D06A28D71EA88FF10081C2CE /* StageThirteen.swift */,
+				D06A28D81EA88FF10081C2CE /* StageThirteen.sks */,
+				D06A28D91EA88FF10081C2CE /* StageFourteen.swift */,
+				D06A28DA1EA88FF10081C2CE /* StageFourteen.sks */,
+				D06A28DB1EA88FF10081C2CE /* StageFifteen.swift */,
+				D06A28DC1EA88FF10081C2CE /* StageFifteen.sks */,
+				D06A28DD1EA88FF10081C2CE /* StageSixteen.swift */,
+				D06A28DE1EA88FF10081C2CE /* StageSixteen.sks */,
+				D06A28DF1EA88FF10081C2CE /* StageSeventeen.swift */,
+				D06A28E01EA88FF10081C2CE /* StageSeventeen.sks */,
+				D06A28E11EA88FF10081C2CE /* StageEighteen.swift */,
+				D06A28E21EA88FF10081C2CE /* StageEighteen.sks */,
+				D06A28E31EA88FF10081C2CE /* StageNineteen.swift */,
+				D06A28E41EA88FF10081C2CE /* StageNineteen.sks */,
+				D06A28E51EA88FF10081C2CE /* StageTwenty.swift */,
+				D06A28E61EA88FF10081C2CE /* StageTwenty.sks */,
+				D06A28E71EA88FF10081C2CE /* StageTwentyOne.swift */,
+				D06A28E81EA88FF10081C2CE /* StageTwentyOne.sks */,
+				D06A28E91EA88FF10081C2CE /* StageTwentyTwo.swift */,
+				D06A28EA1EA88FF10081C2CE /* StageTwentyTwo.sks */,
+				D06A28EB1EA88FF10081C2CE /* StageTwentyThree.swift */,
+				D06A28EC1EA88FF10081C2CE /* StageTwentyThree.sks */,
+				D06A28ED1EA88FF10081C2CE /* StageTwentyFour.swift */,
+				D06A28EE1EA88FF10081C2CE /* StageTwentyFour.sks */,
+				D06A28EF1EA88FF10081C2CE /* StageTwentyFive.swift */,
+				D06A28F01EA88FF10081C2CE /* StageTwentyFive.sks */,
+				D06A28F11EA88FF10081C2CE /* StageTwentySix.swift */,
+				D06A28F21EA88FF10081C2CE /* StageTwentySix.sks */,
+				D06A28F31EA88FF10081C2CE /* StageTwentySeven.swift */,
+				D06A28F41EA88FF10081C2CE /* StageTwentySeven.sks */,
+				D06A28F51EA88FF10081C2CE /* StageTwentyEight.swift */,
+				D06A28F61EA88FF10081C2CE /* StageTwentyEight.sks */,
+				D06A28F71EA88FF10081C2CE /* StageTwentyNine.swift */,
+				D06A28F81EA88FF10081C2CE /* StageTwentyNine.sks */,
+				D06A28F91EA88FF10081C2CE /* StageThirty.swift */,
+				D06A28FA1EA88FF10081C2CE /* StageThirty.sks */,
+				D06A28FB1EA88FF10081C2CE /* StageThirtyOne.swift */,
+				D06A28FC1EA88FF10081C2CE /* StageThirtyOne.sks */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		D06A29631EA890060081C2CE /* Mechanics */ = {
+			isa = PBXGroup;
+			children = (
+				D06A28FD1EA88FF10081C2CE /* SKTAudio.swift */,
+				D06A28FE1EA88FF10081C2CE /* Data.swift */,
+				D06A28FF1EA88FF10081C2CE /* Brain.swift */,
+			);
+			name = Mechanics;
+			sourceTree = "<group>";
+		};
+		D06A29641EA8900E0081C2CE /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D06A29001EA88FF10081C2CE /* SplashScreen.swift */,
+				D06A29011EA88FF10081C2CE /* SplashScreen.sks */,
+				D06A29021EA88FF10081C2CE /* MenuScene.swift */,
+				D06A29031EA88FF10081C2CE /* MenuScene.sks */,
+				D06A29041EA88FF10081C2CE /* GameSelect.swift */,
+				D06A29051EA88FF10081C2CE /* GameSelect.sks */,
+				D06A29061EA88FF10081C2CE /* GameSelect2.swift */,
+				D06A29071EA88FF10081C2CE /* GameSelect2.sks */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		D06A29651EA8901A0081C2CE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D06A29081EA88FF10081C2CE /* MODERN.ttf */,
+				D06A29661EA897790081C2CE /* NonadoxOST.mp3 */,
+				D06A29091EA88FF10081C2CE /* g#.wav */,
+				D06A290A1EA88FF10081C2CE /* b.wav */,
+				D06A290B1EA88FF10081C2CE /* c.wav */,
+				D06A290C1EA88FF10081C2CE /* e.wav */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D06A287F1EA88F310081C2CE /* Nonadox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06A28AE1EA88F320081C2CE /* Build configuration list for PBXNativeTarget "Nonadox" */;
+			buildPhases = (
+				D06A287C1EA88F310081C2CE /* Sources */,
+				D06A287D1EA88F310081C2CE /* Frameworks */,
+				D06A287E1EA88F310081C2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Nonadox;
+			productName = Nonadox;
+			productReference = D06A28801EA88F310081C2CE /* Nonadox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D06A28991EA88F320081C2CE /* NonadoxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06A28B11EA88F320081C2CE /* Build configuration list for PBXNativeTarget "NonadoxTests" */;
+			buildPhases = (
+				D06A28961EA88F320081C2CE /* Sources */,
+				D06A28971EA88F320081C2CE /* Frameworks */,
+				D06A28981EA88F320081C2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06A289C1EA88F320081C2CE /* PBXTargetDependency */,
+			);
+			name = NonadoxTests;
+			productName = NonadoxTests;
+			productReference = D06A289A1EA88F320081C2CE /* NonadoxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D06A28A41EA88F320081C2CE /* NonadoxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06A28B41EA88F320081C2CE /* Build configuration list for PBXNativeTarget "NonadoxUITests" */;
+			buildPhases = (
+				D06A28A11EA88F320081C2CE /* Sources */,
+				D06A28A21EA88F320081C2CE /* Frameworks */,
+				D06A28A31EA88F320081C2CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D06A28A71EA88F320081C2CE /* PBXTargetDependency */,
+			);
+			name = NonadoxUITests;
+			productName = NonadoxUITests;
+			productReference = D06A28A51EA88F320081C2CE /* NonadoxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D06A28781EA88F310081C2CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Justin Li";
+				TargetAttributes = {
+					D06A287F1EA88F310081C2CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9YG65M4NPM;
+						ProvisioningStyle = Automatic;
+					};
+					D06A28991EA88F320081C2CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T45WU92S8F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D06A287F1EA88F310081C2CE;
+					};
+					D06A28A41EA88F320081C2CE = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = T45WU92S8F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D06A287F1EA88F310081C2CE;
+					};
+				};
+			};
+			buildConfigurationList = D06A287B1EA88F310081C2CE /* Build configuration list for PBXProject "Nonadox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D06A28771EA88F310081C2CE;
+			productRefGroup = D06A28811EA88F310081C2CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D06A287F1EA88F310081C2CE /* Nonadox */,
+				D06A28991EA88F320081C2CE /* NonadoxTests */,
+				D06A28A41EA88F320081C2CE /* NonadoxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D06A287E1EA88F310081C2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A288F1EA88F320081C2CE /* Main.storyboard in Resources */,
+				D06A291E1EA88FF10081C2CE /* StageSix.sks in Resources */,
+				D06A29601EA88FF10081C2CE /* e.wav in Resources */,
+				D06A29301EA88FF10081C2CE /* StageFifteen.sks in Resources */,
+				D06A29141EA88FF10081C2CE /* StageOne.sks in Resources */,
+				D06A29461EA88FF10081C2CE /* StageTwentySix.sks in Resources */,
+				D06A29501EA88FF10081C2CE /* StageThirtyOne.sks in Resources */,
+				D06A29261EA88FF10081C2CE /* StageTen.sks in Resources */,
+				D06A29361EA88FF10081C2CE /* StageEighteen.sks in Resources */,
+				D06A293E1EA88FF10081C2CE /* StageTwentyTwo.sks in Resources */,
+				D06A293C1EA88FF10081C2CE /* StageTwentyOne.sks in Resources */,
+				D06A291C1EA88FF10081C2CE /* StageFive.sks in Resources */,
+				D06A29281EA88FF10081C2CE /* StageEleven.sks in Resources */,
+				D06A295D1EA88FF10081C2CE /* g#.wav in Resources */,
+				D06A29321EA88FF10081C2CE /* StageSixteen.sks in Resources */,
+				D06A28861EA88F310081C2CE /* GameScene.sks in Resources */,
+				D06A29401EA88FF10081C2CE /* StageTwentyThree.sks in Resources */,
+				D06A295F1EA88FF10081C2CE /* c.wav in Resources */,
+				D06A293A1EA88FF10081C2CE /* StageTwenty.sks in Resources */,
+				D06A295B1EA88FF10081C2CE /* GameSelect2.sks in Resources */,
+				D06A29221EA88FF10081C2CE /* StageEight.sks in Resources */,
+				D06A29421EA88FF10081C2CE /* StageTwentyFour.sks in Resources */,
+				D06A29181EA88FF10081C2CE /* StageThree.sks in Resources */,
+				D06A29121EA88FF10081C2CE /* Tutorial2.sks in Resources */,
+				D06A29481EA88FF10081C2CE /* StageTwentySeven.sks in Resources */,
+				D06A292A1EA88FF10081C2CE /* StageTwelve.sks in Resources */,
+				D06A292C1EA88FF10081C2CE /* StageThirteen.sks in Resources */,
+				D06A29571EA88FF10081C2CE /* MenuScene.sks in Resources */,
+				D06A28911EA88F320081C2CE /* Assets.xcassets in Resources */,
+				D06A295E1EA88FF10081C2CE /* b.wav in Resources */,
+				D06A29381EA88FF10081C2CE /* StageNineteen.sks in Resources */,
+				D06A29101EA88FF10081C2CE /* Tutorial.sks in Resources */,
+				D06A29241EA88FF10081C2CE /* StageNine.sks in Resources */,
+				D06A28941EA88F320081C2CE /* LaunchScreen.storyboard in Resources */,
+				D06A294C1EA88FF10081C2CE /* StageTwentyNine.sks in Resources */,
+				D06A29341EA88FF10081C2CE /* StageSeventeen.sks in Resources */,
+				D06A29201EA88FF10081C2CE /* StageSeven.sks in Resources */,
+				D06A29441EA88FF10081C2CE /* StageTwentyFive.sks in Resources */,
+				D06A295C1EA88FF10081C2CE /* MODERN.ttf in Resources */,
+				D06A294A1EA88FF10081C2CE /* StageTwentyEight.sks in Resources */,
+				D06A28881EA88F310081C2CE /* Actions.sks in Resources */,
+				D06A29591EA88FF10081C2CE /* GameSelect.sks in Resources */,
+				D06A29551EA88FF10081C2CE /* SplashScreen.sks in Resources */,
+				D06A292E1EA88FF10081C2CE /* StageFourteen.sks in Resources */,
+				D06A294E1EA88FF10081C2CE /* StageThirty.sks in Resources */,
+				D06A29671EA897790081C2CE /* NonadoxOST.mp3 in Resources */,
+				D06A291A1EA88FF10081C2CE /* StageFour.sks in Resources */,
+				D06A29161EA88FF10081C2CE /* StageTwo.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28981EA88F320081C2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28A31EA88F320081C2CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D06A287C1EA88F310081C2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A29471EA88FF10081C2CE /* StageTwentySeven.swift in Sources */,
+				D06A288A1EA88F310081C2CE /* GameScene.swift in Sources */,
+				D06A288C1EA88F320081C2CE /* GameViewController.swift in Sources */,
+				D06A29561EA88FF10081C2CE /* MenuScene.swift in Sources */,
+				D06A29451EA88FF10081C2CE /* StageTwentySix.swift in Sources */,
+				D06A29211EA88FF10081C2CE /* StageEight.swift in Sources */,
+				D06A29411EA88FF10081C2CE /* StageTwentyFour.swift in Sources */,
+				D06A293B1EA88FF10081C2CE /* StageTwentyOne.swift in Sources */,
+				D06A293F1EA88FF10081C2CE /* StageTwentyThree.swift in Sources */,
+				D06A29171EA88FF10081C2CE /* StageThree.swift in Sources */,
+				D06A29251EA88FF10081C2CE /* StageTen.swift in Sources */,
+				D06A29291EA88FF10081C2CE /* StageTwelve.swift in Sources */,
+				D06A295A1EA88FF10081C2CE /* GameSelect2.swift in Sources */,
+				D06A29111EA88FF10081C2CE /* Tutorial2.swift in Sources */,
+				D06A29581EA88FF10081C2CE /* GameSelect.swift in Sources */,
+				D06A293D1EA88FF10081C2CE /* StageTwentyTwo.swift in Sources */,
+				D06A290E1EA88FF10081C2CE /* TutorialBrains.swift in Sources */,
+				D06A291D1EA88FF10081C2CE /* StageSix.swift in Sources */,
+				D06A28841EA88F310081C2CE /* AppDelegate.swift in Sources */,
+				D06A294D1EA88FF10081C2CE /* StageThirty.swift in Sources */,
+				D06A29511EA88FF10081C2CE /* SKTAudio.swift in Sources */,
+				D06A29531EA88FF10081C2CE /* Brain.swift in Sources */,
+				D06A290F1EA88FF10081C2CE /* Tutorial.swift in Sources */,
+				D06A29351EA88FF10081C2CE /* StageEighteen.swift in Sources */,
+				D06A29431EA88FF10081C2CE /* StageTwentyFive.swift in Sources */,
+				D06A29491EA88FF10081C2CE /* StageTwentyEight.swift in Sources */,
+				D06A29131EA88FF10081C2CE /* StageOne.swift in Sources */,
+				D06A29391EA88FF10081C2CE /* StageTwenty.swift in Sources */,
+				D06A292B1EA88FF10081C2CE /* StageThirteen.swift in Sources */,
+				D06A29311EA88FF10081C2CE /* StageSixteen.swift in Sources */,
+				D06A29191EA88FF10081C2CE /* StageFour.swift in Sources */,
+				D06A292F1EA88FF10081C2CE /* StageFifteen.swift in Sources */,
+				D06A29151EA88FF10081C2CE /* StageTwo.swift in Sources */,
+				D06A291F1EA88FF10081C2CE /* StageSeven.swift in Sources */,
+				D06A291B1EA88FF10081C2CE /* StageFive.swift in Sources */,
+				D06A29231EA88FF10081C2CE /* StageNine.swift in Sources */,
+				D06A292D1EA88FF10081C2CE /* StageFourteen.swift in Sources */,
+				D06A294B1EA88FF10081C2CE /* StageTwentyNine.swift in Sources */,
+				D06A29521EA88FF10081C2CE /* Data.swift in Sources */,
+				D06A29271EA88FF10081C2CE /* StageEleven.swift in Sources */,
+				D06A29331EA88FF10081C2CE /* StageSeventeen.swift in Sources */,
+				D06A29541EA88FF10081C2CE /* SplashScreen.swift in Sources */,
+				D06A294F1EA88FF10081C2CE /* StageThirtyOne.swift in Sources */,
+				D06A29371EA88FF10081C2CE /* StageNineteen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28961EA88F320081C2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A289F1EA88F320081C2CE /* NonadoxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D06A28A11EA88F320081C2CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06A28AA1EA88F320081C2CE /* NonadoxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D06A289C1EA88F320081C2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06A287F1EA88F310081C2CE /* Nonadox */;
+			targetProxy = D06A289B1EA88F320081C2CE /* PBXContainerItemProxy */;
+		};
+		D06A28A71EA88F320081C2CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D06A287F1EA88F310081C2CE /* Nonadox */;
+			targetProxy = D06A28A61EA88F320081C2CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D06A288D1EA88F320081C2CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06A288E1EA88F320081C2CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D06A28921EA88F320081C2CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D06A28931EA88F320081C2CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D06A28AC1EA88F320081C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D06A28AD1EA88F320081C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D06A28AF1EA88F320081C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9YG65M4NPM;
+				INFOPLIST_FILE = Nonadox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justinliapps.Nonadox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D06A28B01EA88F320081C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 9YG65M4NPM;
+				INFOPLIST_FILE = Nonadox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = justinliapps.Nonadox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D06A28B21EA88F320081C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T45WU92S8F;
+				INFOPLIST_FILE = NonadoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.imjustin.NonadoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nonadox.app/Nonadox";
+			};
+			name = Debug;
+		};
+		D06A28B31EA88F320081C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = T45WU92S8F;
+				INFOPLIST_FILE = NonadoxTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.imjustin.NonadoxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Nonadox.app/Nonadox";
+			};
+			name = Release;
+		};
+		D06A28B51EA88F320081C2CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T45WU92S8F;
+				INFOPLIST_FILE = NonadoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.imjustin.NonadoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Nonadox;
+			};
+			name = Debug;
+		};
+		D06A28B61EA88F320081C2CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = T45WU92S8F;
+				INFOPLIST_FILE = NonadoxUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = li.imjustin.NonadoxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Nonadox;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D06A287B1EA88F310081C2CE /* Build configuration list for PBXProject "Nonadox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A28AC1EA88F320081C2CE /* Debug */,
+				D06A28AD1EA88F320081C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06A28AE1EA88F320081C2CE /* Build configuration list for PBXNativeTarget "Nonadox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A28AF1EA88F320081C2CE /* Debug */,
+				D06A28B01EA88F320081C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06A28B11EA88F320081C2CE /* Build configuration list for PBXNativeTarget "NonadoxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A28B21EA88F320081C2CE /* Debug */,
+				D06A28B31EA88F320081C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06A28B41EA88F320081C2CE /* Build configuration list for PBXNativeTarget "NonadoxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06A28B51EA88F320081C2CE /* Debug */,
+				D06A28B61EA88F320081C2CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D06A28781EA88F310081C2CE /* Project object */;
+}
